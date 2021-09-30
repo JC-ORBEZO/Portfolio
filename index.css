@@ -7,6 +7,7 @@ header {
 /*  IMAGEN PRINCIPAL / NOMBRE   */
 .fotoNombre {
   width: 40%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,15 +17,35 @@ header {
   background-image: url("img01.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 
 .pestañas {
   width: 60%;
-  height: 50px;
-  background-color: darkgreen;
+  height: 100px; /*
+  background-color: darkkhaki;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pestañas span {
+  /*
+  border: 1px solid black;*/
+  padding: 5px;
+  margin-right: 2px;
+}
+
+.pestañas span:hover {
+  background-color: rgb(247, 243, 17);
+  cursor: pointer;
+}
+
+.pestañas > span > a {
+  text-decoration: none;
+  color: black;
 }
 
 /*  NAV */
@@ -32,6 +53,17 @@ nav {
   display: flex;
   justify-content: start;
 }
+
+nav > h3 {
+  margin-left: 140px;
+  color: rgb(136, 133, 133);
+}
+
+h3 > i {
+  margin-right: 10px;
+  color: red;
+}
+
 /*  MAIN    */
 main {
   display: flex;
