@@ -1,0 +1,47 @@
+/*  HEADER  */
+header {
+  display: flex;
+  justify-content: center;
+}
+
+/*  IMAGEN PRINCIPAL / NOMBRE   */
+.fotoNombre {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen01 {
+  background-image: url("img01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.pestañas {
+  width: 60%;
+  height: 50px;
+  background-color: darkgreen;
+}
+
+/*  NAV */
+nav {
+  display: flex;
+  justify-content: start;
+}
+/*  MAIN    */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  FOOTER  */
+footer {
+  display: flex;
+  justify-content: center;
+}
