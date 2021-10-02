@@ -1,7 +1,19 @@
+* {
+  margin-left: 0px;
+  margin-right: 0px;
+  transition: 100ms;
+}
+
+body {
+  margin-bottom: 0; /*
+  background-color: rgb(24, 139, 30);*/
+}
 /*  HEADER  */
 header {
   display: flex;
-  justify-content: center;
+  justify-content: center; /*
+  background-color: teal;*/
+  background-color: rgb(36, 36, 34);
 }
 
 /*  IMAGEN PRINCIPAL / NOMBRE   */
@@ -22,6 +34,12 @@ header {
   border-radius: 50%;
 }
 
+.fotoNombre > h2 {
+  margin-left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
 .pestañas {
   width: 60%;
   height: 100px; /*
@@ -31,32 +49,42 @@ header {
   align-items: center;
 }
 
-.pestañas span {
+.pestañas > span {
   /*
   border: 1px solid black;*/
-  padding: 5px;
-  margin-right: 2px;
-}
-
-.pestañas span:hover {
-  background-color: rgb(247, 243, 17);
-  cursor: pointer;
+  width: 150px;
+  padding: 10px; /*
+  margin-right: 2px;*/
+  text-align: center;
+  font-size: large;
 }
 
 .pestañas > span > a {
   text-decoration: none;
-  color: black;
+  color: white;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Anton", sans-serif;
+  font-family: "Lobster", cursive;
+}
+
+.pestañas > span > a:hover {
+  color: yellow;
+  cursor: pointer;
 }
 
 /*  NAV */
 nav {
   display: flex;
   justify-content: start;
+  background-color: rgb(179, 171, 166);
 }
 
 nav > h3 {
   margin-left: 140px;
-  color: rgb(136, 133, 133);
+  color: rgb(7, 7, 7);
+  margin: 5px;
+  padding-left: 125px;
+  font-size: medium;
 }
 
 h3 > i {
@@ -69,11 +97,113 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; /*
+  background-color: rgb(233, 233, 45);*/
+}
+
+/*  SOBRE MI  */
+main > .sobreMi {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+main > .sobreMi > h2 {
+  margin: 0;
+  padding-top: 10px;
+  padding: 5px; /*
+  background-color: rgb(40, 40, 185);*/
+  color: rgb(40, 40, 185);
+  font-family: "Lobster", cursive;
+  font-size: xx-large;
+}
+
+main > .sobreMi > p {
+  text-align: justify;
+  margin: 0px;
+  padding: 10px;
+}
+
+/*  PROYECTOS  */
+.Proyectos {
+  width: 75%;
+  margin-top: 20px;
+}
+
+.Proyectos > h2 {
+  margin: 0;
+  padding-top: 10px;
+  padding: 5px; /*
+  background-color: rgb(40, 40, 185);*/
+  color: rgb(40, 40, 185);
+  font-family: "Lobster", cursive;
+  font-size: xx-large;
+}
+
+.listaProyectos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/*  PROYECTOS EN CURSO  */
+.ProyectosEnCurso {
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.ProyectosEnCurso > h2 {
+  margin: 0;
+  padding-top: 10px;
+  padding: 5px; /*
+  background-color: rgb(40, 40, 185);*/
+  color: rgb(40, 40, 185);
+  font-family: "Lobster", cursive;
+  font-size: xx-large;
+}
+
+.ProyectosEnCurso > p {
+  height: 85px;
+  margin: 0;
+  text-align: justify;
+  padding: 10px;
 }
 
 /*  FOOTER  */
 footer {
+  height: 40px;
+  margin-bottom: 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  background-color: rgb(36, 36, 34);
+}
+
+.iconos {
+  width: 300px;
+  height: 100%;
   display: flex;
   justify-content: center;
+}
+
+.mail {
+  color: rgb(255, 238, 7);
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.linkedin {
+  color: darkblue;
+}
+
+.github {
+  color: black;
+}
+
+.iconos > a > i {
+  font-size: 25px;
+  margin-right: 10px;
 }
