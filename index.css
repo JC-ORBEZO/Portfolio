@@ -130,6 +130,7 @@ main > .sobreMi > p {
 .Proyectos {
   width: 75%;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .Proyectos > h2 {
@@ -145,7 +146,7 @@ main > .sobreMi > p {
 .listaProyectos {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 /*  PROYECTOS EN CURSO  */
@@ -196,14 +197,122 @@ footer {
 }
 
 .linkedin {
-  color: darkblue;
+  color: rgb(6, 165, 228);
 }
 
 .github {
-  color: black;
+  color: white;
 }
 
 .iconos > a > i {
   font-size: 25px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .Proyectos {
+    width: 95%;
+  }
+
+  .listaProyectos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .listaProyectos > .card {
+    width: 300px;
+    height: 400px;
+  }
+
+  .listaProyectos > .card > div {
+    height: 300px;
+  }
+
+  .ProyectosEnCurso > p {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  * {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  body {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fotoNombre {
+    width: 70%;
+  }
+
+  .pestañas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+  }
+
+  .pestañas > span {
+    width: 70px;
+    height: 20px;
+    font-size: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav > h3 {
+    text-align: end;
+    font-size: small;
+    padding-left: 10px;
+  }
+
+  main > .sobreMi {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .listaProyectos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .listaProyectos > .card {
+    margin-bottom: 10px;
+  }
+
+  .ProyectosEnCurso {
+    width: 90%;
+  }
+
+  .ProyectosEnCurso > p {
+    height: auto;
+  }
 }
