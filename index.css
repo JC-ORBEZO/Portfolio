@@ -1,12 +1,10 @@
 * {
   margin-left: 0px;
   margin-right: 0px;
-  transition: 100ms;
 }
 
 body {
-  margin-bottom: 0; /*
-  background-color: rgb(24, 139, 30);*/
+  margin-bottom: 0;
 }
 /*  HEADER  */
 header {
@@ -65,11 +63,13 @@ header {
   font-family: "Abril Fatface", cursive;
   font-family: "Anton", sans-serif;
   font-family: "Lobster", cursive;
+  transition: 8000ms;
 }
 
 .pestañas > span > a:hover {
   color: yellow;
   cursor: pointer;
+  transition: 2000ms;
 }
 
 /*  NAV */

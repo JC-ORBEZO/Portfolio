@@ -26,43 +26,18 @@
         </div>
     </header>
     <nav><h3><i class="fas fa-map-marker-alt"></i> Buenos Aires - Argentina</h3></nav>
-    <main>
+    <main>        
         <div id="sobreMi" class="sobreMi">
-            <h2>Sobre mi... <a href="#fotoNombre"><i class="fas fa-arrow-circle-up text-danger"></i></a></h2>
-            <p>
-                Soy estudiante en UTN - FRGP, donde he adquirido conocimientos base, así como también en el paradigma de programación orientada a objetos en C++. Complementario a la cursada en la facultad he participado de cursos libres en Desarrollo Web (HTML, CSS y JAVASCRIPT). Considero tengo una buena base como para adaptarme con facilidad, por lo que actualmente busco activamente ampliar mis conocimientos prácticos para así seguir impulsando mi crecimiento en el sector IT.
-            </p>
+            <h2><button id="boton1" onclick="ocultar(id,'parrafo_sobreMi','')">➖</button>Sobre mi... <a href="#fotoNombre"><i class="fas fa-arrow-circle-up text-danger"></i></a></h2>
+            <p id="parrafo_sobreMi">
+                Soy estudiante de la Tecnicatura Uuniversitaria en Programación (TUP) en UTN - FRGP, donde he adquirido conocimientos base, así como también en el paradigma de programación orientada a objetos en C++ y actualmente me ecuentro aprendiendo C# en .Net Framework. Complementario a la cursada en la facultad he participado de cursos básicos en Desarrollo Web (HTML, CSS y JAVASCRIPT). 
+            </p>            
         </div>
         <hr/>
         <div id="Proyectos" class="Proyectos">
             <h2>Proyectos <a href="#fotoNombre"><i class="fas fa-arrow-circle-up text-danger"></i></a></h2>
-            <div class="listaProyectos">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://media.istockphoto.com/photos/shopping-online-concept-parcel-or-paper-cartons-with-a-shopping-cart-picture-id1249219777?k=20&m=1249219777&s=612x612&w=0&h=CKxJKYasEiycTp_Y8JEjVj97wuyLzJYqOr1FdY0K9uE=" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Repositorio</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="https://media.istockphoto.com/photos/blank-to-do-list-notepad-on-desk-from-above-picture-id157742734?k=20&m=157742734&s=612x612&w=0&h=FMbjo44x5LOyGxEnFUwPTrhl2KZlTB0rNLSPfutcr2I=" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Repositorio</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="https://media.istockphoto.com/photos/determine-those-goals-then-get-them-done-picture-id1273511102?k=20&m=1273511102&s=612x612&w=0&h=px1Gn7l09k5TpPz938eDye84R-QgpYRtzBvUZCNH1Q4=" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Repositorio</a>
-                    </div>
-                </div>
-            </div>
-            <div class="listaProyectos">
+            
+            <div id="listaProyectos" class="listaProyectos">
                 <div class="card" style="width: 18rem;">
                     <img src="https://media.istockphoto.com/photos/close-up-of-businessman-or-accountant-hand-holding-pen-working-on-picture-id1275829158?k=20&m=1275829158&s=612x612&w=0&h=Z3iRHWMX1Z2m3TOy9VkdCwjEzKAoNZICk55FqtnAmww=" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -88,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="listaProyectos">
+            <div id="listaProyectos" class="listaProyectos">
                 <div class="card" style="width: 18rem;">
                     <img src="https://media.istockphoto.com/photos/determine-those-goals-then-get-them-done-picture-id1273511102?k=20&m=1273511102&s=612x612&w=0&h=px1Gn7l09k5TpPz938eDye84R-QgpYRtzBvUZCNH1Q4=" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -117,10 +92,10 @@
         </div>
         <hr/>
         <div id="ProyectosEnCurso" class="ProyectosEnCurso">
-            <h2>Proyectos en Curso <a href="#fotoNombre"><i class="fas fa-arrow-circle-up text-danger"></i></a></h2>
-            <p>Actualmente me encuentro repasando y ampliando conceptos de SQL-Server, aprendiendo la sintaxis de C# en .Net ya que es lo que voy a llevar el próximo cuatrimestre, AGOSTO - NOVIEMBRE 2021, en la tecnicatura. Al venir de un lenguaje como C++ tengo mucho a favor al aprender la sintaxis de C#. Por otro lado y con la excusa de aprender una tecnología de moda como la biblioteca React, repaso conceptos de HTML, CSS Y JAVASCRIPT.</p>
+            <h2><button id="boton3" onclick="ocultar(id,'parrafo_ProyectosEnCurso','')">➖</button>Proyectos en Curso <a href="#fotoNombre"><i class="fas fa-arrow-circle-up text-danger"></i></a></h2>
+            <p id="parrafo_ProyectosEnCurso">Actualmente me encuentro repasando y ampliando conceptos de SQL-Server, aprendiendo la sintaxis de C# en .Net ya que es lo que voy a llevar el próximo cuatrimestre, AGOSTO - NOVIEMBRE 2021, en la tecnicatura. Al venir de un lenguaje como C++ tengo mucho a favor al aprender la sintaxis de C#. Por otro lado y con la excusa de aprender una tecnología de moda como la biblioteca React, repaso conceptos de HTML, CSS Y JAVASCRIPT.</p>
         </div>
-    </main>
+    </main>    
     <footer id="footer">
         <div class="iconos">
             <a class="mail" href="mailto:joseorbezorosales@gmail.com?subject=contacto por email"><i class="fas fa-envelope"></i></a>
@@ -129,5 +104,6 @@
         </div>        
     </footer>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105227.7351385482!2d-58.98694851606462!3d-34.49358606852621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9cb6643d2003%3A0xa8da0402f634b636!2sPilar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1633205595639!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <script src="index.js"></script>
 </body>
 </html>
