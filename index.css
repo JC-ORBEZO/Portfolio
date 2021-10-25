@@ -51,8 +51,7 @@ header {
   /*
   border: 1px solid black;*/
   width: 150px;
-  padding: 10px; /*
-  margin-right: 2px;*/
+  padding: 10px;
   text-align: center;
   font-size: large;
 }
@@ -120,6 +119,14 @@ main > .sobreMi > h2 {
   font-size: xx-large;
 }
 
+.boton1 {
+  margin-right: 5px;
+}
+
+.boton1:hover {
+  border: 2px solid greenyellow;
+}
+
 main > .sobreMi > p {
   text-align: justify;
   margin: 0px;
@@ -164,6 +171,14 @@ main > .sobreMi > p {
   color: rgb(40, 40, 185);
   font-family: "Lobster", cursive;
   font-size: xx-large;
+}
+
+.boton3 {
+  margin-right: 5px;
+}
+
+.boton3:hover {
+  border: 2px solid greenyellow;
 }
 
 .ProyectosEnCurso > p {
